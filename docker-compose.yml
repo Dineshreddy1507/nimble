@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: petstore-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: petstore
+      POSTGRES_PASSWORD: petstore
+      POSTGRES_DB: petstore
+    ports:
+      - '5432:5432'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./backend/db/migrations/0001_init.sql:/docker-entrypoint-initdb.d/0001_init.sql:ro
+      - ./backend/db/seed/seed.sql:/docker-entrypoint-initdb.d/0100_seed.sql:ro
+
+  backend:
+    build:
+      context: ./backend
+    container_name: petstore-backend
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://petstore:petstore@db:5432/petstore?sslmode=disable
+      LISTEN_ADDR: ':8080'
+    ports:
+      - '8080:8080'
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: petstore-frontend
+    depends_on:
+      - backend
+    ports:
+      - '3000:80'
+
+volumes:
+  db-data:

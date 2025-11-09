@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sproutGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="32" fill="url(#sproutGradient)" />
+  <ellipse cx="256" cy="284" rx="140" ry="120" fill="#bbf7d0" />
+  <ellipse cx="256" cy="180" rx="90" ry="46" fill="#bbf7d0" />
+  <circle cx="220" cy="250" r="18" fill="#14532d" />
+  <circle cx="292" cy="250" r="18" fill="#14532d" />
+  <path d="M212 306c20 18 68 18 88 0" stroke="#14532d" stroke-width="10" stroke-linecap="round" fill="none" />
+  <path d="M256 138c32-46 84-62 120-44-14 34-58 52-120 44z" fill="#4ade80" opacity="0.7" />
+  <path d="M256 138c-32-46-84-62-120-44 14 34 58 52 120 44z" fill="#4ade80" opacity="0.7" />
+  <text x="50%" y="430" font-family="Segoe UI, sans-serif" font-size="58" text-anchor="middle" fill="#14532d">
+    Sprout
+  </text>
+</svg>

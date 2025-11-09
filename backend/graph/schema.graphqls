@@ -1,0 +1,65 @@
+scalar Time
+
+enum Species {
+  CAT
+  DOG
+  FROG
+}
+
+type Pet {
+  id: ID!
+  name: String!
+  species: Species!
+  ageYears: Int!
+  description: String!
+  imagePath: String!
+  createdAt: Time!
+  soldAt: Time
+  removedAt: Time
+}
+
+type SoldPet {
+  pet: Pet!
+  soldAt: Time!
+}
+
+type PurchaseError {
+  petId: ID
+  message: String!
+}
+
+type PurchaseResult {
+  success: Boolean!
+  purchasedPets: [Pet!]!
+  errors: [PurchaseError!]!
+}
+
+input CreatePetInput {
+  name: String!
+  species: Species!
+  ageYears: Int!
+  description: String!
+  imagePath: String!
+}
+
+input DateRangeInput {
+  start: Time!
+  end: Time!
+}
+
+input PurchaseCartInput {
+  petIds: [ID!]!
+}
+
+type Query {
+  merchantUnsoldPets: [Pet!]!
+  merchantSoldPets(range: DateRangeInput!): [SoldPet!]!
+  customerAvailablePets: [Pet!]!
+}
+
+type Mutation {
+  merchantCreatePet(input: CreatePetInput!): Pet!
+  merchantRemovePet(id: ID!): Boolean!
+  customerPurchasePet(id: ID!): PurchaseResult!
+  customerPurchaseCart(input: PurchaseCartInput!): PurchaseResult!
+}
