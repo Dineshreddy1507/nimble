@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="novaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="32" fill="url(#novaGradient)" />
+  <path d="M128 320c40-96 216-96 256 0-40 100-216 100-256 0z" fill="#dbeafe" />
+  <ellipse cx="256" cy="220" rx="120" ry="110" fill="#eff6ff" />
+  <circle cx="216" cy="220" r="22" fill="#0f172a" />
+  <circle cx="296" cy="220" r="22" fill="#0f172a" />
+  <path d="M236 280c16 12 52 12 72 0" stroke="#0f172a" stroke-width="10" stroke-linecap="round" fill="none" />
+  <path d="M170 178c0-40 36-72 86-72s86 32 86 72" stroke="#bfdbfe" stroke-width="18" stroke-linecap="round" fill="none" />
+  <text x="50%" y="440" font-family="Segoe UI, sans-serif" font-size="60" text-anchor="middle" fill="#eff6ff">
+    Nova
+  </text>
+</svg>

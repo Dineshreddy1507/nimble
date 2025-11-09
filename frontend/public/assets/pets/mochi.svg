@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mochiGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="32" fill="url(#mochiGradient)" />
+  <ellipse cx="256" cy="260" rx="150" ry="140" fill="#ede9fe" />
+  <circle cx="206" cy="240" r="20" fill="#1f2937" />
+  <circle cx="306" cy="240" r="20" fill="#1f2937" />
+  <ellipse cx="250" cy="310" rx="24" ry="18" fill="#f472b6" />
+  <ellipse cx="262" cy="310" rx="24" ry="18" fill="#f472b6" />
+  <path d="M220 200c0-32 24-58 36-58s36 26 36 58" stroke="#c4b5fd" stroke-width="16" stroke-linecap="round" fill="none" />
+  <text x="50%" y="440" font-family="Segoe UI, sans-serif" font-size="60" text-anchor="middle" fill="#ede9fe">
+    Mochi
+  </text>
+</svg>

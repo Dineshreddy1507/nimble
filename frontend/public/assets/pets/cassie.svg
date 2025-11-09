@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cassieGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#cassieGradient)" rx="32" />
+  <circle cx="180" cy="220" r="90" fill="#fcd34d" />
+  <circle cx="332" cy="220" r="90" fill="#fcd34d" />
+  <ellipse cx="180" cy="180" rx="42" ry="60" fill="#fef3c7" />
+  <ellipse cx="332" cy="180" rx="42" ry="60" fill="#fef3c7" />
+  <circle cx="220" cy="240" r="16" fill="#1f2937" />
+  <circle cx="292" cy="240" r="16" fill="#1f2937" />
+  <path d="M256 260c20 0 38 16 38 36 0 18-18 32-38 32s-38-14-38-32c0-20 18-36 38-36z" fill="#fef3c7" />
+  <path d="M226 320c20 12 60 12 80 0-12 26-32 42-40 42s-28-16-40-42z" fill="#f97316" />
+  <text x="50%" y="430" font-family="Segoe UI, sans-serif" font-size="58" text-anchor="middle" fill="#fef3c7">
+    Cassie
+  </text>
+</svg>
